@@ -1,0 +1,26 @@
+# Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/Assets/AssetStoreTools*
+
+# Visual Studio / MonoDevelop generated
+ExportedObj/
+obj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+
+# Gradle generated
+.gradle/
+/build/
+/Assets/Plugins/Android/libs/unity-*.jar
+
+# Mac generated
+.DS_Store
