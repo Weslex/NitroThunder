@@ -35,12 +35,15 @@ public class CarController : MonoBehaviour
         isBreaking = Input.GetKey(KeyCode.Space);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         GetInput();
         HandleMotor();
         HandleSteering();
         UpdateWheels();
+        if(!FireRay()){
+            ApplyBreaking(); 
+        }
     }
 
     private void HandleMotor()
@@ -89,6 +92,22 @@ public class CarController : MonoBehaviour
         wheelCollider.GetWorldPose(out pos, out rot);
         wheelTransform.rotation = rot;
         wheelTransform.position = pos;
+    }
+
+
+    bool FireRay(){
+        Vector3 dir = new Vector3(0, -1, 0);
+        Vector3 offset = new Vector3(0, 1.0f, 0);
+        Debug.DrawRay(transform.position + offset, dir*10f, Color.green);
+        Ray ray = new Ray(transform.position + offset, dir*10f);
+        RaycastHit hitData; 
+        if(Physics.Raycast(ray, out hitData)){
+            Debug.Log(hitData.collider.tag);
+            if(!(hitData.collider.tag == "road")){
+                return false;
+        }
+        }
+        return true;
     }
 
 }
