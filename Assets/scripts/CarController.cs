@@ -9,6 +9,11 @@ public class CarController : MonoBehaviour
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
 
+    private OffTrackDetector offTrackDetector; 
+
+    private int terrainLayer;
+
+    private OffTrackDetector trackDetector; 
     private float horizontalInput;
     private float verticalInput;
     private float currentSteerAngle;
@@ -92,6 +97,12 @@ public class CarController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = massCenter.localPosition;
+        offTrackDetector = GetComponentInChildren<OffTrackDetector>(); 
+        if (offTrackDetector != null)
+        {
+            offTrackDetector.OnCarOffTrack += HandleCarOffTrack;
+            offTrackDetector.OnCarOnTrack += HandleCarOnTrack;
+        }
     }
 
     //gets the input from the player
@@ -148,7 +159,7 @@ public class CarController : MonoBehaviour
     }
 
     //applies the break force to the wheels
-    private void ApplyBreaking()
+    public void ApplyBreaking()
     {
         //sets the break torque of the wheels to the current break force
         frontRightWheelCollider.brakeTorque = currentbreakForce;
@@ -195,6 +206,14 @@ public class CarController : MonoBehaviour
         //sets rotation and position of the wheel to the variables
         wheelTransform.rotation = rot;
         wheelTransform.position = pos;
+    }
+
+    private void HandleCarOffTrack(){
+        rb.drag  = .5F; 
+    }
+
+    private void HandleCarOnTrack(){
+        rb.drag = .05f;
     }
 
 }

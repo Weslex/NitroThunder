@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker1
 -projectPath
-/Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder
+/Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55922
-Successfully changed project path to: /Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder
-/Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder
+60660
+Successfully changed project path to: /Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder
+/Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,15 +54,15 @@ Successfully changed project path to: /Users/wesleymitchell/NitroThunder/Thunder
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4477928832] Host "[IP] 192.168.1.144 [Port] 0 [Flags] 2 [Guid] 1636732971 [EditorId] 1636732971 [Version] 1048832 [Id] OSXEditor(0,Wesleys-MBP-2.hsd1.tn.comcast.net) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [4442785152] Host "[IP] 192.168.1.144 [Port] 0 [Flags] 2 [Guid] 2015032567 [EditorId] 2015032567 [Version] 1048832 [Id] OSXEditor(0,Wesleys-MBP-2.hsd1.tn.comcast.net) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4477928832] Host "[IP] 192.168.1.144 [Port] 0 [Flags] 2 [Guid] 1636732971 [EditorId] 1636732971 [Version] 1048832 [Id] OSXEditor(0,Wesleys-MBP-2.hsd1.tn.comcast.net) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4442785152] Host "[IP] 192.168.1.144 [Port] 0 [Flags] 2 [Guid] 2015032567 [EditorId] 2015032567 [Version] 1048832 [Id] OSXEditor(0,Wesleys-MBP-2.hsd1.tn.comcast.net) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 66.03 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 66.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.17f1 (3e8111cac19d)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder/Assets
+[Subsystems] Discovering subsystems at path /Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M1 Pro (high power)
 Metal devices available: 1
@@ -73,94 +73,94 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56892
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56815
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.17f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000861 seconds.
+Registered in 0.000463 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 65.95 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 67.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.466 seconds
+- Completed reload, in  0.486 seconds
 Domain Reload Profiling:
-	ReloadAssembly (466ms)
-		BeginReloadAssembly (72ms)
+	ReloadAssembly (487ms)
+		BeginReloadAssembly (81ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (317ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (329ms)
+			LoadAssemblies (82ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (78ms)
+			SetupTypeCache (80ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (187ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (194ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (66ms)
+				RefreshPlugins (68ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (89ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001850 seconds.
+Registered in 0.001389 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  0.666 seconds
+- Completed reload, in  0.743 seconds
 Domain Reload Profiling:
-	ReloadAssembly (666ms)
-		BeginReloadAssembly (58ms)
+	ReloadAssembly (744ms)
+		BeginReloadAssembly (71ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (534ms)
-			LoadAssemblies (51ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (589ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
+			SetupTypeCache (215ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (214ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (235ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (52ms)
-				ProcessInitializeOnLoadAttributes (143ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.17f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3437 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 28 unused Assets / (41.1 KB). Loaded Objects now: 4008.
+Unloading 28 unused Assets / (41.0 KB). Loaded Objects now: 4008.
 Memory consumption went from 116.2 MB to 116.2 MB.
-Total: 2.655625 ms (FindLiveObjects: 0.126083 ms CreateObjectMapping: 0.043750 ms MarkObjects: 2.415541 ms  DeleteObjects: 0.069500 ms)
+Total: 2.620208 ms (FindLiveObjects: 0.125292 ms CreateObjectMapping: 0.041292 ms MarkObjects: 2.395666 ms  DeleteObjects: 0.057250 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -174,69 +174,82 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 449126.449598 seconds.
+  Time since last request: 458996.834543 seconds.
   path: Assets/Dirt.JPEG.jpg
   artifactKey: Guid(0893885d289e2495d93d36a4dd43cbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Dirt.JPEG.jpg using Guid(0893885d289e2495d93d36a4dd43cbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd616ff02c6e2478a90867655ebd349') in 0.670469 seconds 
+Start importing Assets/Dirt.JPEG.jpg using Guid(0893885d289e2495d93d36a4dd43cbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd616ff02c6e2478a90867655ebd349') in 0.545793 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/NewLayer.terrainlayer
-  artifactKey: Guid(8398fc5dded9548d1bba090e76e18723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewLayer.terrainlayer using Guid(8398fc5dded9548d1bba090e76e18723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac0ad31a0ccf35b53247a07708d9f409') in 0.042887 seconds 
+  Time since last request: 0.000081 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(ad5c06ff5ce5949ac9af798edcbf78b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(ad5c06ff5ce5949ac9af798edcbf78b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree Oak_Tree must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+ -> (artifact id: '94715ea5be0b85a0ce500fa7e101e7c0') in 0.154372 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Tree.prefab
-  artifactKey: Guid(ec5a7aaa200394d9494c5b41d4813e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree.prefab using Guid(ec5a7aaa200394d9494c5b41d4813e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746104f7bda35dd66865e82da37bf4f8') in 0.551552 seconds 
+  Time since last request: 0.000047 seconds.
+  path: Assets/DirtN.JPEG.jpg
+  artifactKey: Guid(f96aa7588727241b09d4bf5fc20bb10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DirtN.JPEG.jpg using Guid(f96aa7588727241b09d4bf5fc20bb10d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b63093e277ba2b670c29095ba6dc34') in 0.023929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/grassTextureN.jpg
+  artifactKey: Guid(46d6bdbd115a24958bd8da7b2b495ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/grassTextureN.jpg using Guid(46d6bdbd115a24958bd8da7b2b495ea1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aac338b7c13211231a1f5cdefbe4e95') in 0.003764 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/car.prefab
+  artifactKey: Guid(5c4e664de6c944519b8f7eaea3ab6959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/car.prefab using Guid(5c4e664de6c944519b8f7eaea3ab6959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4218a135ccb0a1aebc3559f207ef629c') in 0.401446 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001266 seconds.
+Registered in 0.001621 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x17df5b000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Thunder2/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Thread 0x2a6c2b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/wesleymitchell/NitroThunder/Nitro3/NitroThunder/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.653 seconds
+- Completed reload, in  0.862 seconds
 Domain Reload Profiling:
-	ReloadAssembly (653ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (863ms)
+		BeginReloadAssembly (203ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (494ms)
-			LoadAssemblies (31ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (583ms)
+			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (213ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (190ms)
+			SetupTypeCache (241ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (217ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (36ms)
-				ProcessInitializeOnLoadAttributes (132ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (41ms)
+				ProcessInitializeOnLoadAttributes (149ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3413 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (22.0 KB). Loaded Objects now: 4064.
-Memory consumption went from 129.6 MB to 129.6 MB.
-Total: 2.555209 ms (FindLiveObjects: 0.109416 ms CreateObjectMapping: 0.042000 ms MarkObjects: 2.383834 ms  DeleteObjects: 0.019250 ms)
+Unloading 23 unused Assets / (504.8 KB). Loaded Objects now: 4029.
+Memory consumption went from 130.2 MB to 129.7 MB.
+Total: 2.949083 ms (FindLiveObjects: 0.145417 ms CreateObjectMapping: 0.045208 ms MarkObjects: 2.480208 ms  DeleteObjects: 0.277583 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -248,3 +261,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
