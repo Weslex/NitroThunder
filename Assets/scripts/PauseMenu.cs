@@ -36,7 +36,6 @@ public class PauseMenu : MonoBehaviour
         Paused = true;
     }
 
-    // method to resume game when PauseMenuCanvas is true.
     public void Play()
     {
         // deactivates PauseMenuCanvas and sets time scale to 1 which resumes game
