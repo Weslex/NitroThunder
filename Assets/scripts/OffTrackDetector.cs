@@ -11,11 +11,10 @@ public class OffTrackDetector : MonoBehaviour
     public event Action OnCarOffTrack;
     public event Action OnCarOnTrack;
 
-    private void Start()
-    {
-        terrainLayer = LayerMask.NameToLayer("Terrain");
-        Debug.Log("I am doing something"); 
-    }
+private void Start()
+{
+    terrainLayer = LayerMask.NameToLayer("Terrain");
+}
 private void OnTriggerEnter(Collider other)
 {
     Debug.Log("Trigger entered: " + other.gameObject.name);

@@ -223,6 +223,8 @@ public class CarController : MonoBehaviour
         rb.drag = .2f;
         offTrack = false;
     }
+
+    //unused attempt at calculating the center of mass of the car
     private Vector3 CalculateCenterOfCar()
     {
         Vector3 sum = Vector3.zero;
