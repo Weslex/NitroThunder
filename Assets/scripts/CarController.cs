@@ -13,6 +13,7 @@ public class CarController : MonoBehaviour
 
     private int terrainLayer;
 
+    private bool offTrack; 
     private OffTrackDetector trackDetector; 
     private float horizontalInput;
     private float verticalInput;
@@ -96,12 +97,14 @@ public class CarController : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.centerOfMass = massCenter.localPosition;
+        //rb.centerOfMass = offTrackDetecto;
+        Debug.Log(rb.centerOfMass);
         offTrackDetector = GetComponentInChildren<OffTrackDetector>(); 
         if (offTrackDetector != null)
         {
             offTrackDetector.OnCarOffTrack += HandleCarOffTrack;
             offTrackDetector.OnCarOnTrack += HandleCarOnTrack;
+            offTrack = false;
         }
     }
 
@@ -142,19 +145,22 @@ public class CarController : MonoBehaviour
 
     //handles the movement of the car
     private void HandleMotor()
-    {
+    {   
+        verticalInput = Input.GetAxis(VERTICAL);
         //sets the motor torque of the wheels to the vertical input times the motor force
         frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
         frontRightWheelCollider.motorTorque = verticalInput * motorForce;
         //checks to see if car is breaking and if it is then sets the break force to the break force variable if not then sets it to 0
         currentbreakForce = isBreaking ? breakForce : 0f;
         //checks to see if the car is breaking and if it is or isn't it then calls the function to apply the break force
-        if(isBreaking)
+        if(isBreaking || offTrack)
         {
             ApplyBreaking();
+            rb.drag = 0.75F;
         }
         else{
             ApplyBreaking();
+            rb.drag =0.05F;
         }
     }
 
@@ -209,11 +215,39 @@ public class CarController : MonoBehaviour
     }
 
     private void HandleCarOffTrack(){
-        rb.drag  = .5F; 
+        offTrack = true;
+        Debug.Log(rb.drag); 
     }
 
     private void HandleCarOnTrack(){
-        rb.drag = .05f;
+        rb.drag = .2f;
+        offTrack = false;
     }
+    private Vector3 CalculateCenterOfCar()
+    {
+        Vector3 sum = Vector3.zero;
+        int count = 0;
+
+        Transform[] children = GetComponentsInChildren<Transform>();
+
+        foreach (Transform child in children)
+        {
+            if (child != transform) // Exclude the car's root transform
+            {
+                sum += child.position;
+                count++;
+            }
+        }
+
+        return sum / count;
+    }
+    public float GetSpeedMPH()
+    {
+        if (rb == null) return 0f;
+
+        // Convert the car's speed from meters per second to miles per hour
+        float speedMPH = rb.velocity.magnitude * 2.23694f;
+        return speedMPH;
+    }   
 
 }
