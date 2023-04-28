@@ -152,7 +152,8 @@ public class CarController : MonoBehaviour
         frontRightWheelCollider.motorTorque = verticalInput * motorForce;
         //checks to see if car is breaking and if it is then sets the break force to the break force variable if not then sets it to 0
         currentbreakForce = isBreaking ? breakForce : 0f;
-        //checks to see if the car is breaking and if it is or isn't it then calls the function to apply the break force
+
+        //checks to see if the car is breaking or off the track and if it is or isn't it then calls the function to apply the break force
         if(isBreaking || offTrack)
         {
             ApplyBreaking();
@@ -214,11 +215,13 @@ public class CarController : MonoBehaviour
         wheelTransform.position = pos;
     }
 
+    //method to be called if car exits the track
     private void HandleCarOffTrack(){
         offTrack = true;
         Debug.Log(rb.drag); 
     }
 
+    //reset drag if the car returns to the track
     private void HandleCarOnTrack(){
         rb.drag = .2f;
         offTrack = false;
@@ -243,11 +246,12 @@ public class CarController : MonoBehaviour
 
         return sum / count;
     }
+    //method to get the speed of the car
     public float GetSpeedMPH()
     {
         if (rb == null) return 0f;
 
-        // Convert the car's speed from meters per second to miles per hour
+        //convert the car's speed from meters per second to miles per hour
         float speedMPH = rb.velocity.magnitude * 2.23694f;
         return speedMPH;
     }   

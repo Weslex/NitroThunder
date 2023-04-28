@@ -13,6 +13,7 @@ public class FinishLine : MonoBehaviour
     private int count;
 
     private void Start(){
+        //set count to 0
         count = 0; 
         
     }
@@ -21,14 +22,17 @@ public class FinishLine : MonoBehaviour
     {
 
         Debug.Log(other.name);
+        //key array of postfix to add to the position the user gets in the game
         string[] key = {"st", "nd", "rd", "th", "th", "th", "th"};  
+
+        //if the name of the collider touching the finish line is, display the place the player got on the overlay
         if (other.name == "car")
         {
             count++;
             //count = count/2 + 1; 
             finishText.text = $"{count}{key[count-1]} Place!!";
-            // Your functionality here, e.g., load the next level or display a win message
         }
+        //if the name of the collider is "Body" it means that the car is AI so just increment count
         else if(other.name != "Body"){
             count++;
         }
