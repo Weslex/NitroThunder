@@ -21,3 +21,4 @@ git clone https://github.com/Weslex/NitroThunder.git
 - Reverse - d or down arrow
 - Brake - space
 - Nitro - left shift
+- Pause - esc key
